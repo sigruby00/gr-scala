@@ -1,0 +1,863 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1scala_1_1detector__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::scala::detector_impl</compoundname>
+    <basecompoundref refid="classgr_1_1scala_1_1detector" prot="public" virt="non-virtual">gr::scala::detector</basecompoundref>
+    <includes refid="detector__impl_8h" local="no">detector_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a43a059951da43e32aa836bd669660397" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::scala::detector_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="68" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1ac5fc8f127f27258d5061f3af5fab2af8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::scala::detector_impl::d_bw</definition>
+        <argsstring></argsstring>
+        <name>d_bw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="69" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a565e0e11ada4b74e1dbb77feb7d82d37" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::scala::detector_impl::d_fs</definition>
+        <argsstring></argsstring>
+        <name>d_fs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="70" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a5b23897e8166a9739616c2c00c8257f8" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::scala::detector_impl::d_samples_per_second</definition>
+        <argsstring></argsstring>
+        <name>d_samples_per_second</name>
+        <briefdescription>
+<para>The number of samples taken per second by GNU Radio. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="71" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a389fd3edf6df75b874ef9b214c7c1920" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::scala::detector_impl::d_downchirp_ifreq</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp_ifreq</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal downchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="73" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a0ed6f05195362c0fc3fba0fe56eb3dfc" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::scala::detector_impl::d_upchirp_ifreq</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp_ifreq</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal downchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="74" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a3fcd7c77213a5fc6e1df153fe153f9ba" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::scala::detector_impl::d_upchirp_ifreq_v</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp_ifreq_v</name>
+        <briefdescription>
+<para>The instantaneous frequency of the ideal upchirp. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="75" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1aa08ecea33bc0e9e86c630a88ef5c53d2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::scala::detector_impl::d_window</definition>
+        <argsstring></argsstring>
+        <name>d_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="76" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1af0a6d11bd243c8da1c6a4293023adf25" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::scala::detector_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="78" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a791a4c1fcc123a0a20286510f90a5617" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::scala::detector_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="79" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a4ddd81bd50a2dff0556a56619954e96c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::scala::detector_impl::d_downchirp_ext</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="80" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a5fed4c835250e9ffb83c47e94635baec" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::scala::detector_impl::d_upchirp_ext</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="81" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a0c81d5e6d37eeb5df80000c71df8c42b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgr_1_1scala_1_1peak" kindref="compound">peak</ref> &gt;</type>
+        <definition>std::vector&lt;peak&gt; gr::scala::detector_impl::track</definition>
+        <argsstring></argsstring>
+        <name>track</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="83" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a909bae886049516941a65d597117566c" prot="private" static="no" mutable="no">
+        <type>fft::fft_complex *</type>
+        <definition>fft::fft_complex* gr::scala::detector_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="84" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1abac5f45ae7a18e591d2364b483f686bd" prot="private" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* gr::scala::detector_impl::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="85" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a287e8011a0f8ce01da0b26e109ff7592" prot="private" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* gr::scala::detector_impl::buffer_fft</definition>
+        <argsstring></argsstring>
+        <name>buffer_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="86" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a6aee44e506d61aaac6161a5853a71c69" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::scala::detector_impl::buffer_to_send</definition>
+        <argsstring></argsstring>
+        <name>buffer_to_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="87" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1aacb1121fc016fb11e0de9b3056e33efb" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::scala::detector_impl::mag_dump</definition>
+        <argsstring></argsstring>
+        <name>mag_dump</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="89" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a02369acd896051fc404b45c99f4560aa" prot="private" static="no" mutable="no">
+        <type>struct mosquitto *</type>
+        <definition>struct mosquitto* gr::scala::detector_impl::mosq</definition>
+        <argsstring></argsstring>
+        <name>mosq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="91" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a153122471c9b055b65965e0c5f917201" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::scala::detector_impl::rc</definition>
+        <argsstring></argsstring>
+        <name>rc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="92" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1aa972fb5230bda6bc43df4f38f6b6b5d3" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t gr::scala::detector_impl::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="94" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1aeb1f97bf1e01f322fb5c146a6d59e083" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::d_samples_per_symbol</definition>
+        <argsstring></argsstring>
+        <name>d_samples_per_symbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="96" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a9ea339e471c59a38f7a98be0e4ad1f42" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::d_num_sym_pre</definition>
+        <argsstring></argsstring>
+        <name>d_num_sym_pre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="97" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a9d3a3fb66f2f27ad98b7cfbe682bd9b5" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::d_num_samples</definition>
+        <argsstring></argsstring>
+        <name>d_num_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="98" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a73e0efceffa79c4f52aa534ee0356350" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::d_bin_size</definition>
+        <argsstring></argsstring>
+        <name>d_bin_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="99" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1af64f464195879c8350234d92c7d03b0b" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="100" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a0692abf2d2c52b24a0c7ea86c5631bbe" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::g_counter</definition>
+        <argsstring></argsstring>
+        <name>g_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="101" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a41e126efcc9c28656bd3a68249951100" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::scala::detector_impl::d_num_preamble</definition>
+        <argsstring></argsstring>
+        <name>d_num_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="103" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1aa569dcbcf9a99d816b1d964b4050f920" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::scala::detector_impl::d_bin_tolerance</definition>
+        <argsstring></argsstring>
+        <name>d_bin_tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="104" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1afa1e427d3c7a1201d50cc8afebc9655e" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::scala::detector_impl::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="105" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a4fa84e5b3d51a20c8953ca865ee461ef" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::scala::detector_impl::d_p</definition>
+        <argsstring></argsstring>
+        <name>d_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="106" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a43ec6268110138c4a243ac7d02a286a3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::scala::detector_impl::d_symbols_per_second</definition>
+        <argsstring></argsstring>
+        <name>d_symbols_per_second</name>
+        <briefdescription>
+<para>Indicator of how many symbols (read: chirps) are transferred each second. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="108" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a33c1b5fe4f3183cf8ffd961154a9d3c9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::scala::detector_impl::d_dt</definition>
+        <argsstring></argsstring>
+        <name>d_dt</name>
+        <briefdescription>
+<para>Indicates how fast the frequency changes in a symbol (chirp). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="109" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1a4e2732961208dde5d7210709547f6952" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double gr::scala::detector_impl::d_beta</definition>
+        <argsstring></argsstring>
+        <name>d_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="110" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1scala_1_1detector__impl_1ac9bdd44397d4c7544d3d69760ff8abe9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::scala::detector_impl::g_index</definition>
+        <argsstring></argsstring>
+        <name>g_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="112" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1afa3cb47f882de952523cd37d58769d49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::find_and_add_peak</definition>
+        <argsstring>(float *fft_mag_ext, float *fft_mag_w_ext, int w_idx)</argsstring>
+        <name>find_and_add_peak</name>
+        <param>
+          <type>float *</type>
+          <declname>fft_mag_ext</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>fft_mag_w_ext</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>w_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a263350e3b691b6a87f2988f6077c30ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::check_peak</definition>
+        <argsstring>()</argsstring>
+        <name>check_peak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1ab5dc83a34b9b3153384640bb2c5abf24" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::calc_offset</definition>
+        <argsstring>()</argsstring>
+        <name>calc_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1ad222e4d8ac0749ffebbd94fac6ea118e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::build_ideal_chirps</definition>
+        <argsstring>(void)</argsstring>
+        <name>build_ideal_chirps</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a7839bf6cdb03c176be3126c8aa92ddf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::samples_to_file</definition>
+        <argsstring>(const std::string path, const gr_complex *v, const uint32_t length, const uint32_t elem_size)</argsstring>
+        <name>samples_to_file</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a7f96705abb7e348b5324733c22efaf5b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::samples_to_file_cont</definition>
+        <argsstring>(const std::string path, const gr_complex *v, const uint32_t length, const uint32_t elem_size)</argsstring>
+        <name>samples_to_file_cont</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a417ab34fd300684ee03311b265de3831" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::samples_to_file_cont_float</definition>
+        <argsstring>(const std::string path, const float *v, const uint32_t length, const uint32_t elem_size)</argsstring>
+        <name>samples_to_file_cont_float</name>
+        <param>
+          <type>const std::string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const float *</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>elem_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a2388ce6fb215d7548fe72b8c9c5b2491" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::instantaneous_frequency</definition>
+        <argsstring>(const gr_complex *in_samples, float *out_ifreq, const uint32_t window)</argsstring>
+        <name>instantaneous_frequency</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>in_samples</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_ifreq</declname>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>window</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a56d927f4409ca70e1affcbf282b29386" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::message_callback</definition>
+        <argsstring>(struct mosquitto *mosq, const struct mosquitto_message *msg)</argsstring>
+        <name>message_callback</name>
+        <param>
+          <type>struct mosquitto *</type>
+          <declname>mosq</declname>
+        </param>
+        <param>
+          <type>const struct mosquitto_message *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="125" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a7e455382d237567c82124bcf84953e6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::scala::detector_impl::detector_impl</definition>
+        <argsstring>(int g_id)</argsstring>
+        <name>detector_impl</name>
+        <param>
+          <type>int</type>
+          <declname>g_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a71e40a1a5c4b380b3eaa0fc944ad2039" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::scala::detector_impl::~detector_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~detector_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a6abc0179df8c7ae79723c9b9ba8dfdc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::scala::detector_impl::argmax_32f</definition>
+        <argsstring>(float *fft_result, int v_length)</argsstring>
+        <name>argmax_32f</name>
+        <param>
+          <type>float *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>v_length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a99645b157745c6fd1e84e72fbcccc5a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::scala::detector_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1scala_1_1detector__impl_1a8f404dc79636eb6f8bfdfca9d588bc25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::scala::detector_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="136" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::scala::detector_impl</label>
+        <link refid="classgr_1_1scala_1_1detector__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gr::scala::detector</label>
+        <link refid="classgr_1_1scala_1_1detector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="8">
+        <label>gr::scala::detector_impl</label>
+        <link refid="classgr_1_1scala_1_1detector__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gr::scala::detector</label>
+        <link refid="classgr_1_1scala_1_1detector"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" line="66" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h" bodystart="65" bodyend="140"/>
+    <listofallmembers>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a6abc0179df8c7ae79723c9b9ba8dfdc0" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>argmax_32f</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1abac5f45ae7a18e591d2364b483f686bd" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>buffer</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a287e8011a0f8ce01da0b26e109ff7592" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>buffer_fft</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a6aee44e506d61aaac6161a5853a71c69" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>buffer_to_send</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1ad222e4d8ac0749ffebbd94fac6ea118e" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>build_ideal_chirps</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1ab5dc83a34b9b3153384640bb2c5abf24" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>calc_offset</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a263350e3b691b6a87f2988f6077c30ed" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>check_peak</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a4e2732961208dde5d7210709547f6952" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a73e0efceffa79c4f52aa534ee0356350" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_bin_size</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1aa569dcbcf9a99d816b1d964b4050f920" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_bin_tolerance</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1ac5fc8f127f27258d5061f3af5fab2af8" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_bw</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a791a4c1fcc123a0a20286510f90a5617" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a4ddd81bd50a2dff0556a56619954e96c" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_downchirp_ext</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a389fd3edf6df75b874ef9b214c7c1920" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_downchirp_ifreq</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a33c1b5fe4f3183cf8ffd961154a9d3c9" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_dt</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a909bae886049516941a65d597117566c" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1af64f464195879c8350234d92c7d03b0b" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a565e0e11ada4b74e1dbb77feb7d82d37" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_fs</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a41e126efcc9c28656bd3a68249951100" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_num_preamble</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a9d3a3fb66f2f27ad98b7cfbe682bd9b5" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_num_samples</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a9ea339e471c59a38f7a98be0e4ad1f42" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_num_sym_pre</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1afa1e427d3c7a1201d50cc8afebc9655e" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a4fa84e5b3d51a20c8953ca865ee461ef" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_p</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a5b23897e8166a9739616c2c00c8257f8" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_samples_per_second</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1aeb1f97bf1e01f322fb5c146a6d59e083" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_samples_per_symbol</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a43a059951da43e32aa836bd669660397" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a43ec6268110138c4a243ac7d02a286a3" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_symbols_per_second</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1af0a6d11bd243c8da1c6a4293023adf25" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a5fed4c835250e9ffb83c47e94635baec" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_upchirp_ext</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a0ed6f05195362c0fc3fba0fe56eb3dfc" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_upchirp_ifreq</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a3fcd7c77213a5fc6e1df153fe153f9ba" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_upchirp_ifreq_v</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1aa08ecea33bc0e9e86c630a88ef5c53d2" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>d_window</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a7e455382d237567c82124bcf84953e6c" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>detector_impl</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1afa3cb47f882de952523cd37d58769d49" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>find_and_add_peak</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a99645b157745c6fd1e84e72fbcccc5a7" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a0692abf2d2c52b24a0c7ea86c5631bbe" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>g_counter</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1ac9bdd44397d4c7544d3d69760ff8abe9" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>g_index</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a8f404dc79636eb6f8bfdfca9d588bc25" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a2388ce6fb215d7548fe72b8c9c5b2491" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>instantaneous_frequency</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1aacb1121fc016fb11e0de9b3056e33efb" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>mag_dump</name></member>
+      <member refid="classgr_1_1scala_1_1detector_1aef3a6ce87819f0d82d55fbe5dac06857" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a56d927f4409ca70e1affcbf282b29386" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>message_callback</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a02369acd896051fc404b45c99f4560aa" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>mosq</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a153122471c9b055b65965e0c5f917201" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>rc</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a7839bf6cdb03c176be3126c8aa92ddf6" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>samples_to_file</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a7f96705abb7e348b5324733c22efaf5b" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>samples_to_file_cont</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a417ab34fd300684ee03311b265de3831" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>samples_to_file_cont_float</name></member>
+      <member refid="classgr_1_1scala_1_1detector_1ad22aba5dbf5c9d6c2a8b951d4d5da75a" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1aa972fb5230bda6bc43df4f38f6b6b5d3" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>t</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a0c81d5e6d37eeb5df80000c71df8c42b" prot="private" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>track</name></member>
+      <member refid="classgr_1_1scala_1_1detector__impl_1a71e40a1a5c4b380b3eaa0fc944ad2039" prot="public" virt="non-virtual"><scope>gr::scala::detector_impl</scope><name>~detector_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

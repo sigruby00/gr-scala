@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="detector__impl_8h" kind="file" language="C++">
+    <compoundname>detector_impl.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">gnuradio/expj.h</includes>
+    <includes local="no">gnuradio/fft/fft.h</includes>
+    <includes local="no">gnuradio/fft/window.h</includes>
+    <includes local="no">gnuradio/io_signature.h</includes>
+    <includes local="no">volk/volk.h</includes>
+    <includes refid="detector_8h" local="no">scala/detector.h</includes>
+    <includes refid="utilities_8h" local="yes">utilities.h</includes>
+    <includes local="no">mosquitto.h</includes>
+    <incdepgraph>
+      <node id="20">
+        <label>gnuradio/expj.h</label>
+      </node>
+      <node id="16">
+        <label>queue</label>
+      </node>
+      <node id="19">
+        <label>limits</label>
+      </node>
+      <node id="24">
+        <label>volk/volk.h</label>
+      </node>
+      <node id="12">
+        <label>cmath</label>
+      </node>
+      <node id="25">
+        <label>scala/detector.h</label>
+        <link refid="detector_8h"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="18">
+        <label>fstream</label>
+      </node>
+      <node id="22">
+        <label>gnuradio/fft/window.h</label>
+      </node>
+      <node id="11">
+        <label>detector_impl.h</label>
+        <link refid="detector__impl_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gnuradio/fft/fft.h</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+      <node id="28">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="29">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+      </node>
+      <node id="30">
+        <label>mosquitto.h</label>
+      </node>
+      <node id="23">
+        <label>gnuradio/io_signature.h</label>
+      </node>
+      <node id="13">
+        <label>cstdlib</label>
+      </node>
+      <node id="26">
+        <label>scala/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>deque</label>
+      </node>
+      <node id="17">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structgr_1_1scala_1_1peak" prot="public">gr::scala::peak</innerclass>
+    <innerclass refid="classgr_1_1scala_1_1detector__impl" prot="public">gr::scala::detector_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1scala">gr::scala</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-scala/lib/detector_impl.h"/>
+  </compounddef>
+</doxygen>

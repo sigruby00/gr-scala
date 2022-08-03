@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1lora" kind="namespace" language="C++">
+    <compoundname>gr::lora</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1lora_1a6f5dfbef15d56d598395120f44cb2867" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pmod</definition>
+        <argsstring>(int x, unsigned int n)</argsstring>
+        <name>pmod</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Python-style modulo, (x % n) &gt;= 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dividend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>divisor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-scala/lib/utilities.h" line="35" column="1" bodyfile="/home/rubysig00/Documents/gr-scala/lib/utilities.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-scala/lib/utilities.h" line="25" column="1"/>
+  </compounddef>
+</doxygen>

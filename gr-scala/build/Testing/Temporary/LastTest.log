@@ -1,0 +1,23 @@
+Start testing: Aug 02 20:45 KST
+----------------------------------------------------------
+1/1 Testing: qa_detector
+1/1 Test: qa_detector
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-scala/build/python/qa_detector_test.sh"
+Directory: /home/rubysig00/Documents/gr-scala/build/python
+"qa_detector" start time: Aug 02 20:45 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"qa_detector" end time: Aug 02 20:45 KST
+"qa_detector" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 02 20:45 KST

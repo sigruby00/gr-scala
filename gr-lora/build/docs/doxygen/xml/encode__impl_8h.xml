@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="encode__impl_8h" kind="file" language="C++">
+    <compoundname>encode_impl.h</compoundname>
+    <includes local="no">volk/volk.h</includes>
+    <includes local="no">bitset</includes>
+    <includes local="no">cmath</includes>
+    <includes refid="encode_8h" local="no">lora/encode.h</includes>
+    <includes refid="utilities_8h" local="yes">utilities.h</includes>
+    <incdepgraph>
+      <node id="64">
+        <label>volk/volk.h</label>
+      </node>
+      <node id="67">
+        <label>lora/encode.h</label>
+        <link refid="encode_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>cmath</label>
+      </node>
+      <node id="69">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="63">
+        <label>encode_impl.h</label>
+        <link refid="encode__impl_8h"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+      </node>
+      <node id="65">
+        <label>bitset</label>
+      </node>
+      <node id="70">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="71">
+        <label>lora/lora.h</label>
+        <link refid="lora_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classgr_1_1lora_1_1encode__impl" prot="public">gr::lora::encode_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h"/>
+  </compounddef>
+</doxygen>

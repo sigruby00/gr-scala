@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgr_1_1lora_1_1peak" kind="struct" language="C++" prot="public">
+    <compoundname>gr::lora::peak</compoundname>
+    <includes refid="pyramid__demod__impl_8h" local="no">pyramid_demod_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1lora_1_1peak_1a325d353ff6417b2df26fbd7255df1b5a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::peak::ts</definition>
+        <argsstring></argsstring>
+        <name>ts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="51" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1lora_1_1peak_1a730e3efe89ca064b7125e35e24867f2e" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::peak::bin</definition>
+        <argsstring></argsstring>
+        <name>bin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="52" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1lora_1_1peak_1a0d6afcff229d21f387971cbdaf27b5dd" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::peak::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="53" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1lora_1_1peak_1ae11fc581c7589f147811e117da1a1242" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::peak::h_single</definition>
+        <argsstring></argsstring>
+        <name>h_single</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="54" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgr_1_1lora_1_1peak_1a6703a16253d436d7ebfe1458ab84fd41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::peak::peak</definition>
+        <argsstring>(unsigned int ts, unsigned int bin, float h, float h_single)</argsstring>
+        <name>peak</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ts</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>bin</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h_single</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="55" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="50" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="50" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structgr_1_1lora_1_1peak_1a730e3efe89ca064b7125e35e24867f2e" prot="public" virt="non-virtual"><scope>gr::lora::peak</scope><name>bin</name></member>
+      <member refid="structgr_1_1lora_1_1peak_1a0d6afcff229d21f387971cbdaf27b5dd" prot="public" virt="non-virtual"><scope>gr::lora::peak</scope><name>h</name></member>
+      <member refid="structgr_1_1lora_1_1peak_1ae11fc581c7589f147811e117da1a1242" prot="public" virt="non-virtual"><scope>gr::lora::peak</scope><name>h_single</name></member>
+      <member refid="structgr_1_1lora_1_1peak_1a6703a16253d436d7ebfe1458ab84fd41" prot="public" virt="non-virtual"><scope>gr::lora::peak</scope><name>peak</name></member>
+      <member refid="structgr_1_1lora_1_1peak_1a325d353ff6417b2df26fbd7255df1b5a" prot="public" virt="non-virtual"><scope>gr::lora::peak</scope><name>ts</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

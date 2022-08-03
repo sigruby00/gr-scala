@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structgr_1_1lora_1_1packet__state" kind="struct" language="C++" prot="public">
+    <compoundname>gr::lora::packet_state</compoundname>
+    <includes refid="pyramid__demod__impl_8h" local="no">pyramid_demod_impl.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1lora_1_1packet__state_1a122b43136e62c91e3940efa4c127acb9" prot="public" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::packet_state::packet_id</definition>
+        <argsstring></argsstring>
+        <name>packet_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="74" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1lora_1_1packet__state_1a42823e215bd17afb6acfeff2f0cc70a2" prot="public" static="no" mutable="no">
+        <type>short</type>
+        <definition>short gr::lora::packet_state::ttl</definition>
+        <argsstring></argsstring>
+        <name>ttl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="75" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structgr_1_1lora_1_1packet__state_1a11098833b55ede6d4eeeff4f15257775" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::packet_state::packet_state</definition>
+        <argsstring>(unsigned short packet_id, unsigned short ttl)</argsstring>
+        <name>packet_state</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>packet_id</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>ttl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="76" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="73" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="73" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structgr_1_1lora_1_1packet__state_1a122b43136e62c91e3940efa4c127acb9" prot="public" virt="non-virtual"><scope>gr::lora::packet_state</scope><name>packet_id</name></member>
+      <member refid="structgr_1_1lora_1_1packet__state_1a11098833b55ede6d4eeeff4f15257775" prot="public" virt="non-virtual"><scope>gr::lora::packet_state</scope><name>packet_state</name></member>
+      <member refid="structgr_1_1lora_1_1packet__state_1a42823e215bd17afb6acfeff2f0cc70a2" prot="public" virt="non-virtual"><scope>gr::lora::packet_state</scope><name>ttl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

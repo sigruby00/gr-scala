@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rubysig00/Documents/gr-scala/swig/scala_swig.i
+gnuradio.i
+/home/rubysig00/Documents/gr-scala/swig/gnuradio.i
+scala_swig_doc.i
+/home/rubysig00/Documents/gr-scala/swig/scala_swig_doc.i
+scala/detector.h
+/home/rubysig00/Documents/gr-scala/swig/scala/detector.h
+scala/detector.h
+/home/rubysig00/Documents/gr-scala/swig/scala/detector.h
+

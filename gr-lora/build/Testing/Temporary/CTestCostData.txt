@@ -1,0 +1,6 @@
+qa_demod 5 0.0209006
+qa_mod 5 0.0210334
+qa_pyramid_demod 5 0.0208556
+qa_decode 5 0.0210418
+qa_encode 5 0.0213944
+---

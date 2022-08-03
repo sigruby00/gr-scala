@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_lora_EXPORTS -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-lora.dir/demod_impl.cc.o -c /home/rubysig00/Documents/gr-lora/lib/demod_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-lora/lib/demod_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_lora_EXPORTS -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-lora.dir/mod_impl.cc.o -c /home/rubysig00/Documents/gr-lora/lib/mod_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-lora/lib/mod_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_lora_EXPORTS -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-lora.dir/pyramid_demod_impl.cc.o -c /home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_lora_EXPORTS -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-lora.dir/decode_impl.cc.o -c /home/rubysig00/Documents/gr-lora/lib/decode_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-lora/lib/decode_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_lora_EXPORTS -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-lora.dir/encode_impl.cc.o -c /home/rubysig00/Documents/gr-lora/lib/encode_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-lora/lib/encode_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/swig",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_lora_swig_doc_tag.dir/_lora_swig_doc_tag.cpp.o -c /home/rubysig00/Documents/gr-lora/build/swig/_lora_swig_doc_tag.cpp",
+  "file": "/home/rubysig00/Documents/gr-lora/build/swig/_lora_swig_doc_tag.cpp"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-lora/build/swig",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dlora_swig_EXPORTS -I/home/rubysig00/Documents/gr-lora/build/swig -I/home/rubysig00/Documents/gr-lora/swig -I/usr/include/gnuradio/swig -isystem /usr/include/python3.6m -I/home/rubysig00/Documents/gr-lora/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/lora_swig.dir/CMakeFiles/lora_swig.dir/lora_swigPYTHON_wrap.cxx.o -c /home/rubysig00/Documents/gr-lora/build/swig/CMakeFiles/lora_swig.dir/lora_swigPYTHON_wrap.cxx",
+  "file": "/home/rubysig00/Documents/gr-lora/build/swig/CMakeFiles/lora_swig.dir/lora_swigPYTHON_wrap.cxx"
+}
+]

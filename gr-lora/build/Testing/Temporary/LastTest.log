@@ -1,0 +1,103 @@
+Start testing: Aug 02 20:44 KST
+----------------------------------------------------------
+1/5 Testing: qa_demod
+1/5 Test: qa_demod
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-lora/build/python/qa_demod_test.sh"
+Directory: /home/rubysig00/Documents/gr-lora/build/python
+"qa_demod" start time: Aug 02 20:44 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"qa_demod" end time: Aug 02 20:44 KST
+"qa_demod" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/5 Testing: qa_mod
+2/5 Test: qa_mod
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-lora/build/python/qa_mod_test.sh"
+Directory: /home/rubysig00/Documents/gr-lora/build/python
+"qa_mod" start time: Aug 02 20:44 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"qa_mod" end time: Aug 02 20:44 KST
+"qa_mod" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/5 Testing: qa_pyramid_demod
+3/5 Test: qa_pyramid_demod
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-lora/build/python/qa_pyramid_demod_test.sh"
+Directory: /home/rubysig00/Documents/gr-lora/build/python
+"qa_pyramid_demod" start time: Aug 02 20:44 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.10 sec
+----------------------------------------------------------
+Test Passed.
+"qa_pyramid_demod" end time: Aug 02 20:44 KST
+"qa_pyramid_demod" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/5 Testing: qa_decode
+4/5 Test: qa_decode
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-lora/build/python/qa_decode_test.sh"
+Directory: /home/rubysig00/Documents/gr-lora/build/python
+"qa_decode" start time: Aug 02 20:44 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"qa_decode" end time: Aug 02 20:44 KST
+"qa_decode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/5 Testing: qa_encode
+5/5 Test: qa_encode
+Command: "/bin/sh" "/home/rubysig00/Documents/gr-lora/build/python/qa_encode_test.sh"
+Directory: /home/rubysig00/Documents/gr-lora/build/python
+"qa_encode" start time: Aug 02 20:44 KST
+Output:
+----------------------------------------------------------
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+OK
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"qa_encode" end time: Aug 02 20:44 KST
+"qa_encode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Aug 02 20:44 KST

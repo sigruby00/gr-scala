@@ -1,0 +1,479 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1encode__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::encode_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1encode" prot="public" virt="non-virtual">gr::lora::encode</basecompoundref>
+    <includes refid="encode__impl_8h" local="no">encode_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a2f8dc1c168ed6bdb1c2c4da6aeabae5a" prot="private" static="no" mutable="no">
+        <type>const uint8_t *</type>
+        <definition>const uint8_t* gr::lora::encode_impl::d_whitening_sequence</definition>
+        <argsstring></argsstring>
+        <name>d_whitening_sequence</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="36" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a336a4d2fc58c39abcf47e76ca9f1f835" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::encode_impl::d_in_port</definition>
+        <argsstring></argsstring>
+        <name>d_in_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="38" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a464e0c907b732d13aa906bb9fa381ce1" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::encode_impl::d_out_port</definition>
+        <argsstring></argsstring>
+        <name>d_out_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="39" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1ac36af583203455ae37c91a684867862f" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::encode_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="41" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1ab67ddd0845ff8492e6edc27d950f6447" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::encode_impl::d_cr</definition>
+        <argsstring></argsstring>
+        <name>d_cr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="42" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a3635807cd8ff8a80f05ab9a93686d975" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::encode_impl::d_crc</definition>
+        <argsstring></argsstring>
+        <name>d_crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="43" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a5b70edcb138fef06ccbcde2e25941523" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::encode_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="44" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a8c6b27ca54b137494d97bdd6a028ac5b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::encode_impl::d_header</definition>
+        <argsstring></argsstring>
+        <name>d_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="45" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a4b40cf2114aedffd42ff00c4d1a36524" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::encode_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="47" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1encode__impl_1a25153e6418a6072bcb7fdb46b3a19548" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::encode_impl::d_interleaver_size</definition>
+        <argsstring></argsstring>
+        <name>d_interleaver_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="48" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a64b532556c84cfa43a04704f9073e574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::encode_impl::encode_impl</definition>
+        <argsstring>(short spreading_factor, short code_rate, bool crc, bool low_data_rate, bool header)</argsstring>
+        <name>encode_impl</name>
+        <param>
+          <type>short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>short</type>
+          <declname>code_rate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1ad1e9990e08245f4bb8bd38b7c177b5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::encode_impl::~encode_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~encode_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a6cce147fa73c3813a35e360da94d83d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::gen_header</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;nibbheader_nibblesles, uint8_t payload_len)</argsstring>
+        <name>gen_header</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>nibbheader_nibblesles</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a3e9af939458326a85bdb44262f457e71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::lora::encode_impl::calc_sym_num</definition>
+        <argsstring>(uint8_t payload_len)</argsstring>
+        <name>calc_sym_num</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a7d1dad1c0193e18c7f0dfde643438f38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::to_gray</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>to_gray</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a635eccd588b38afa6243fd313732ae55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::from_gray</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>from_gray</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a75f507aa2f0f6d4da5b40eddbf58a833" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::whiten</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;bytes, uint8_t len)</argsstring>
+        <name>whiten</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>bytes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1ab634913c925e0a3869c68ab21f72764c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::interleave</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;codewords, std::vector&lt; unsigned short &gt; &amp;symbols)</argsstring>
+        <name>interleave</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>codewords</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1aa4fdfec52372bcf1ece3cdbf1fd9368f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::hamming_encode</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;nibbles, std::vector&lt; unsigned char &gt; &amp;codewords)</argsstring>
+        <name>hamming_encode</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>nibbles</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>codewords</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a35434f6daae65d3fe5117e15b0bf807e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::lora::encode_impl::parity</definition>
+        <argsstring>(unsigned char c, unsigned char bitmask)</argsstring>
+        <name>parity</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>bitmask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1a42ac041e8469d6096b6e3c5bb5547af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::print_payload</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;payload)</argsstring>
+        <name>print_payload</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>payload</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1aabae77bcf1e0495b93356b16f6edc5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::print_bitwise_u8</definition>
+        <argsstring>(std::vector&lt; unsigned char &gt; &amp;buffer)</argsstring>
+        <name>print_bitwise_u8</name>
+        <param>
+          <type>std::vector&lt; unsigned char &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1aa9c70da03bc6b410a82c93f83d4e71e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::print_bitwise_u16</definition>
+        <argsstring>(std::vector&lt; unsigned short &gt; &amp;buffer)</argsstring>
+        <name>print_bitwise_u16</name>
+        <param>
+          <type>std::vector&lt; unsigned short &gt; &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1encode__impl_1ad214f63756d90bcf4b75c099cc43e69d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::encode_impl::encode</definition>
+        <argsstring>(pmt::pmt_t msg)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>pmt::pmt_t</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="71" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>block</label>
+      </node>
+      <node id="30">
+        <label>gr::lora::encode</label>
+        <link refid="classgr_1_1lora_1_1encode"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gr::lora::encode_impl</label>
+        <link refid="classgr_1_1lora_1_1encode__impl"/>
+        <childnode refid="30" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="34">
+        <label>block</label>
+      </node>
+      <node id="33">
+        <label>gr::lora::encode</label>
+        <link refid="classgr_1_1lora_1_1encode"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>gr::lora::encode_impl</label>
+        <link refid="classgr_1_1lora_1_1encode__impl"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" line="34" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/encode_impl.h" bodystart="33" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a3e9af939458326a85bdb44262f457e71" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>calc_sym_num</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1ab67ddd0845ff8492e6edc27d950f6447" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_cr</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a3635807cd8ff8a80f05ab9a93686d975" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_crc</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a4b40cf2114aedffd42ff00c4d1a36524" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a8c6b27ca54b137494d97bdd6a028ac5b" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_header</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a336a4d2fc58c39abcf47e76ca9f1f835" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_in_port</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a25153e6418a6072bcb7fdb46b3a19548" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_interleaver_size</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a5b70edcb138fef06ccbcde2e25941523" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a464e0c907b732d13aa906bb9fa381ce1" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_out_port</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1ac36af583203455ae37c91a684867862f" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a2f8dc1c168ed6bdb1c2c4da6aeabae5a" prot="private" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>d_whitening_sequence</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1ad214f63756d90bcf4b75c099cc43e69d" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>encode</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a64b532556c84cfa43a04704f9073e574" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>encode_impl</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a635eccd588b38afa6243fd313732ae55" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>from_gray</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a6cce147fa73c3813a35e360da94d83d7" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>gen_header</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1aa4fdfec52372bcf1ece3cdbf1fd9368f" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>hamming_encode</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1ab634913c925e0a3869c68ab21f72764c" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>interleave</name></member>
+      <member refid="classgr_1_1lora_1_1encode_1a415bc549e3d9faa3030ba3615312d2bb" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a35434f6daae65d3fe5117e15b0bf807e" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>parity</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1aa9c70da03bc6b410a82c93f83d4e71e7" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>print_bitwise_u16</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1aabae77bcf1e0495b93356b16f6edc5bc" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>print_bitwise_u8</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a42ac041e8469d6096b6e3c5bb5547af5" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>print_payload</name></member>
+      <member refid="classgr_1_1lora_1_1encode_1a5f59fb7c44fd9820a352aa3c93f61345" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a7d1dad1c0193e18c7f0dfde643438f38" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>to_gray</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1a75f507aa2f0f6d4da5b40eddbf58a833" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>whiten</name></member>
+      <member refid="classgr_1_1lora_1_1encode__impl_1ad1e9990e08245f4bb8bd38b7c177b5e7" prot="public" virt="non-virtual"><scope>gr::lora::encode_impl</scope><name>~encode_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

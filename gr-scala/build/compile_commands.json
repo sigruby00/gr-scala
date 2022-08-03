@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/rubysig00/Documents/gr-scala/build/lib",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dgnuradio_scala_EXPORTS -I/home/rubysig00/Documents/gr-scala/lib/../include -I/usr/local/include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/gnuradio-scala.dir/detector_impl.cc.o -c /home/rubysig00/Documents/gr-scala/lib/detector_impl.cc",
+  "file": "/home/rubysig00/Documents/gr-scala/lib/detector_impl.cc"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-scala/build/swig",
+  "command": "/usr/bin/c++    -O3 -DNDEBUG   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/_scala_swig_doc_tag.dir/_scala_swig_doc_tag.cpp.o -c /home/rubysig00/Documents/gr-scala/build/swig/_scala_swig_doc_tag.cpp",
+  "file": "/home/rubysig00/Documents/gr-scala/build/swig/_scala_swig_doc_tag.cpp"
+},
+{
+  "directory": "/home/rubysig00/Documents/gr-scala/build/swig",
+  "command": "/usr/bin/c++  -DFFTW3F_THREADS -DGR_CTRLPORT -Dscala_swig_EXPORTS -I/home/rubysig00/Documents/gr-scala/build/swig -I/home/rubysig00/Documents/gr-scala/swig -I/usr/include/gnuradio/swig -isystem /usr/include/python3.6m -I/home/rubysig00/Documents/gr-scala/lib/../include  -O3 -DNDEBUG -fPIC   -fvisibility=hidden -std=gnu++11 -o CMakeFiles/scala_swig.dir/CMakeFiles/scala_swig.dir/scala_swigPYTHON_wrap.cxx.o -c /home/rubysig00/Documents/gr-scala/build/swig/CMakeFiles/scala_swig.dir/scala_swigPYTHON_wrap.cxx",
+  "file": "/home/rubysig00/Documents/gr-scala/build/swig/CMakeFiles/scala_swig.dir/scala_swigPYTHON_wrap.cxx"
+}
+]

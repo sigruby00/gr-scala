@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1lora_1_1decode" kind="class"><name>gr::lora::decode</name>
+    <member refid="classgr_1_1lora_1_1decode_1a9fed34843fc239461d942fa71e578978" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1decode_1a991d8d89cb66f8b2d877bec7948a6e3f" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1demod" kind="class"><name>gr::lora::demod</name>
+    <member refid="classgr_1_1lora_1_1demod_1aaf5f7e94353c27096fb0c41057382bef" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1demod_1a67d977fbdebefbed8249481b0d61f78c" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1encode" kind="class"><name>gr::lora::encode</name>
+    <member refid="classgr_1_1lora_1_1encode_1a5f59fb7c44fd9820a352aa3c93f61345" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1encode_1a415bc549e3d9faa3030ba3615312d2bb" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1mod" kind="class"><name>gr::lora::mod</name>
+    <member refid="classgr_1_1lora_1_1mod_1a1695be6a3c39bde14c6a6fdf958e5d70" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1mod_1aa845d9a3ddbe90644b09adb3489afa9a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1lora_1_1pyramid__demod" kind="class"><name>gr::lora::pyramid_demod</name>
+    <member refid="classgr_1_1lora_1_1pyramid__demod_1af7f26f2f6edcb016c6ee60d5d61020fc" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1lora_1_1pyramid__demod_1a64cb232ebeeaaf012dd1065ab07b31d4" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1lora" kind="namespace"><name>gr::lora</name>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" kind="enum"><name>demod_state_t</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea366cbf425d183fbb418cb909d7448a95" kind="enumvalue"><name>S_RESET</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eaba2112816a1376592673e9033b90b094" kind="enumvalue"><name>S_PREFILL</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea3bcc60176740437e98e062d37138dd5c" kind="enumvalue"><name>S_DETECT_PREAMBLE</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea31de68db79ba3bbbc2a9cb42de3df515" kind="enumvalue"><name>S_SFD_SYNC</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eacefc68567d14802377cbba9af94b655e" kind="enumvalue"><name>S_READ_HEADER</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea2f55523d883d49715f54cce287d7fe0b" kind="enumvalue"><name>S_READ_PAYLOAD</name></member>
+    <member refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea136e67aab0e4810295f19b98cb1b5d25" kind="enumvalue"><name>S_OUT</name></member>
+    <member refid="namespacegr_1_1lora_1a59220c535d34e043573a99c8ea11f893" kind="variable"><name>whitening_sequence_length</name></member>
+    <member refid="namespacegr_1_1lora_1a7956c6f1ebdf2b2d40bff49c4e0d548c" kind="variable"><name>whitening_sequence</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1afdc461b2e58d75adc8fe72bef899df32" kind="define"><name>LORA_API</name></member>
+  </compound>
+  <compound refid="decode_8h" kind="file"><name>decode.h</name>
+    <member refid="decode_8h_1ac566a60d8bb0a9e4e1e50b520be9ac4b" kind="define"><name>SYMBOL_TIMEOUT_COUNT</name></member>
+  </compound>
+  <compound refid="demod_8h" kind="file"><name>demod.h</name>
+    <member refid="demod_8h_1a26603a2300711064010b4930d21feecb" kind="define"><name>DEMOD_HISTORY_DEPTH</name></member>
+    <member refid="demod_8h_1aec63cfd1559e0075e35fae2f1a81b1fc" kind="define"><name>REQUIRED_PREAMBLE_CHIRPS</name></member>
+    <member refid="demod_8h_1af4808b2f42dd1e6656798151f4f9a4c7" kind="define"><name>REQUIRED_SFD_CHIRPS</name></member>
+    <member refid="demod_8h_1a2f0f156e1cba585db801dc65f46fa8d1" kind="define"><name>LORA_SFD_TOLERANCE</name></member>
+    <member refid="demod_8h_1a1fd26d306ddc14fd13364a5122543ce0" kind="define"><name>LORA_PREAMBLE_TOLERANCE</name></member>
+    <member refid="demod_8h_1a4f76ca6c23ad07d5bf79fd08db4527b1" kind="define"><name>DEMOD_SYNC_RECOVERY_COUNT</name></member>
+    <member refid="demod_8h_1a03e727dac5e776a6b4c4f1c8ee9df025" kind="define"><name>FFT_PEAK_SEARCH_ABS</name></member>
+    <member refid="demod_8h_1ab82950bd60516238d0b9792c1411364b" kind="define"><name>FFT_PEAK_SEARCH_PHASE</name></member>
+    <member refid="demod_8h_1a38be30146ddf73871a2a19478396db28" kind="define"><name>FFT_PEAK_SEARCH_B</name></member>
+  </compound>
+  <compound refid="encode_8h" kind="file"><name>encode.h</name>
+  </compound>
+  <compound refid="lora_8h" kind="file"><name>lora.h</name>
+  </compound>
+  <compound refid="mod_8h" kind="file"><name>mod.h</name>
+  </compound>
+  <compound refid="pyramid__demod_8h" kind="file"><name>pyramid_demod.h</name>
+    <member refid="pyramid__demod_8h_1a2efaf97f21bbc4100c0f4dcf25206ffc" kind="define"><name>PY_DEMOD_HISTORY_DEPTH</name></member>
+    <member refid="pyramid__demod_8h_1a43789b52149e7e0036c3d15308f5c717" kind="define"><name>TIMESTAMP_MOD</name></member>
+    <member refid="pyramid__demod_8h_1aca44a852936537ab059509a3b51830f7" kind="define"><name>APEX_ALGORITHM_RATIO</name></member>
+    <member refid="pyramid__demod_8h_1acc3304fff84d45214212261df5913ba1" kind="define"><name>APEX_ALGORITHM_LINEAR_REGRESSION</name></member>
+    <member refid="pyramid__demod_8h_1aa4bc7d97ea945387d9425aebd8cc82d4" kind="define"><name>APEX_ALGORITHM_SEGMENT</name></member>
+    <member refid="pyramid__demod_8h_1a292da5ccc2ac7e2f5193cebcd26b7aab" kind="define"><name>APEX_ALGORITHM</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_7a7217d5b8ec1be4285377747bc029ba" kind="dir"><name>lora</name>
+  </compound>
+</doxygenindex>

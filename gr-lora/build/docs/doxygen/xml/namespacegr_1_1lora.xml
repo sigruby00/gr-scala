@@ -1,0 +1,346 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1lora" kind="namespace" language="C++">
+    <compoundname>gr::lora</compoundname>
+    <innerclass refid="structgr_1_1lora_1_1bin__track__id" prot="public">gr::lora::bin_track_id</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1decode" prot="public">gr::lora::decode</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1decode__impl" prot="public">gr::lora::decode_impl</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1demod" prot="public">gr::lora::demod</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1demod__impl" prot="public">gr::lora::demod_impl</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1encode" prot="public">gr::lora::encode</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1encode__impl" prot="public">gr::lora::encode_impl</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1mod" prot="public">gr::lora::mod</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1mod__impl" prot="public">gr::lora::mod_impl</innerclass>
+    <innerclass refid="structgr_1_1lora_1_1packet__state" prot="public">gr::lora::packet_state</innerclass>
+    <innerclass refid="structgr_1_1lora_1_1peak" prot="public">gr::lora::peak</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1pyramid__demod" prot="public">gr::lora::pyramid_demod</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1pyramid__demod__impl" prot="public">gr::lora::pyramid_demod_impl</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" prot="public" static="no">
+        <name>demod_state_t</name>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea366cbf425d183fbb418cb909d7448a95" prot="public">
+          <name>S_RESET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eaba2112816a1376592673e9033b90b094" prot="public">
+          <name>S_PREFILL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea3bcc60176740437e98e062d37138dd5c" prot="public">
+          <name>S_DETECT_PREAMBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea31de68db79ba3bbbc2a9cb42de3df515" prot="public">
+          <name>S_SFD_SYNC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91eacefc68567d14802377cbba9af94b655e" prot="public">
+          <name>S_READ_HEADER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea2f55523d883d49715f54cce287d7fe0b" prot="public">
+          <name>S_READ_PAYLOAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91ea136e67aab0e4810295f19b98cb1b5d25" prot="public">
+          <name>S_OUT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/include/lora/demod.h" line="41" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/include/lora/demod.h" bodystart="41" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4eb" prot="public" static="no">
+        <name>symbol_type</name>
+        <enumvalue id="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4eba37244d87871e98b02dd9aea418eb3c00" prot="public">
+          <name>SYMBOL_PREAMBLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4ebacbde804971d3126b1dc764b2a7237678" prot="public">
+          <name>SYMBOL_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4eba46e806fc9dcf54adc4d2b4c9731475d1" prot="public">
+          <name>SYMBOL_BROKEN_DATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="44" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1lora_1a59220c535d34e043573a99c8ea11f893" prot="public" static="no" mutable="no">
+        <type>const unsigned short</type>
+        <definition>const unsigned short gr::lora::whitening_sequence_length</definition>
+        <argsstring></argsstring>
+        <name>whitening_sequence_length</name>
+        <initializer>= 255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/include/lora/lora.h" line="29" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/include/lora/lora.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1lora_1a7956c6f1ebdf2b2d40bff49c4e0d548c" prot="public" static="no" mutable="no">
+        <type>const uint8_t</type>
+        <definition>const uint8_t gr::lora::whitening_sequence[255]</definition>
+        <argsstring>[255]</argsstring>
+        <name>whitening_sequence</name>
+        <initializer>= {0xff, 0xfe, 0xfc, 0xf8, 0xf0, 0xe1, 0xc2, 0x85, 0x0b, 0x17, 0x2f, 0x5e, 0xbc, 0x78, 0xf1, 0xe3, 0xc6, 0x8d, 0x1a, 0x34, 0x68, 0xd0, 0xa0, 0x40, 0x80, 0x01, 0x02, 0x04, 0x08, 0x11, 0x23, 0x47, 0x8e, 0x1c, 0x38, 0x71, 0xe2, 0xc4, 0x89, 0x12, 0x25, 0x4b, 0x97, 0x2e, 0x5c, 0xb8, 0x70, 0xe0, 0xc0, 0x81, 0x03, 0x06, 0x0c, 0x19, 0x32, 0x64, 0xc9, 0x92, 0x24, 0x49, 0x93, 0x26, 0x4d, 0x9b, 0x37, 0x6e, 0xdc, 0xb9, 0x72, 0xe4, 0xc8, 0x90, 0x20, 0x41, 0x82, 0x05, 0x0a, 0x15, 0x2b, 0x56, 0xad, 0x5b, 0xb6, 0x6d, 0xda, 0xb5, 0x6b, 0xd6, 0xac, 0x59, 0xb2, 0x65, 0xcb, 0x96, 0x2c, 0x58, 0xb0, 0x61, 0xc3, 0x87, 0x0f, 0x1f, 0x3e, 0x7d, 0xfb, 0xf6, 0xed, 0xdb, 0xb7, 0x6f, 0xde, 0xbd, 0x7a, 0xf5, 0xeb, 0xd7, 0xae, 0x5d, 0xba, 0x74, 0xe8, 0xd1, 0xa2, 0x44, 0x88, 0x10, 0x21, 0x43, 0x86, 0x0d, 0x1b, 0x36, 0x6c, 0xd8, 0xb1, 0x63, 0xc7, 0x8f, 0x1e, 0x3c, 0x79, 0xf3, 0xe7, 0xce, 0x9c, 0x39, 0x73, 0xe6, 0xcc, 0x98, 0x31, 0x62, 0xc5, 0x8b, 0x16, 0x2d, 0x5a, 0xb4, 0x69, 0xd2, 0xa4, 0x48, 0x91, 0x22, 0x45, 0x8a, 0x14, 0x29, 0x52, 0xa5, 0x4a, 0x95, 0x2a, 0x54, 0xa9, 0x53, 0xa7, 0x4e, 0x9d, 0x3b, 0x77, 0xee, 0xdd, 0xbb, 0x76, 0xec, 0xd9, 0xb3, 0x67, 0xcf, 0x9e, 0x3d, 0x7b, 0xf7, 0xef, 0xdf, 0xbf, 0x7e, 0xfd, 0xfa, 0xf4, 0xe9, 0xd3, 0xa6, 0x4c, 0x99, 0x33, 0x66, 0xcd, 0x9a, 0x35, 0x6a, 0xd4, 0xa8, 0x51, 0xa3, 0x46, 0x8c, 0x18, 0x30, 0x60, 0xc1, 0x83, 0x07, 0x0e, 0x1d, 0x3a, 0x75, 0xea, 0xd5, 0xaa, 0x55, 0xab, 0x57, 0xaf, 0x5f, 0xbe, 0x7c, 0xf9, 0xf2, 0xe5, 0xca, 0x94, 0x28, 0x50, 0xa1, 0x42, 0x84, 0x09, 0x13, 0x27, 0x4f, 0x9f, 0x3f, 0x7f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/include/lora/lora.h" line="30" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/include/lora/lora.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1lora_1a6f5dfbef15d56d598395120f44cb2867" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pmod</definition>
+        <argsstring>(int x, unsigned int n)</argsstring>
+        <name>pmod</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Python-style modulo, (x % n) &gt;= 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dividend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>divisor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="35" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a5ef0fa282e7efee07a2bdef2563bd0f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::fpmod</definition>
+        <argsstring>(float x, float n)</argsstring>
+        <name>fpmod</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Python-style float modulo, (x % n) &gt;= 0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>dividend </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>divisor </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="48" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a8d40a6e5fef5f957e12f36f8c7f53933" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::rotl</definition>
+        <argsstring>(uint32_t bits, uint32_t count=1u, const uint32_t size=8u)</argsstring>
+        <name>rotl</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>bits</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>count</declname>
+          <defval>1u</defval>
+        </param>
+        <param>
+          <type>const uint32_t</type>
+          <declname>size</declname>
+          <defval>8u</defval>
+        </param>
+        <briefdescription>
+<para>Rotate the given bits to the left and return the result. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bits</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value to rotate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of bits to rotate (shift to left and add to right). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size in bits used in <computeroutput>bits</computeroutput>. <linebreak/>
+e.g. 1 byte given =&gt; size = 8 <linebreak/>
+e.g. only 6 bits in use =&gt; size = 6, and all bits higher than (1 &lt;&lt; size-1) will be zeroed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="65" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="65" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1a8fa420577c52f10be18034adfca1ab20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::lora::data_checksum</definition>
+        <argsstring>(const uint8_t *data, int length)</argsstring>
+        <name>data_checksum</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="74" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="74" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1ac717920a3ad9b815927bc734fa123489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::header_checksum</definition>
+        <argsstring>(const uint16_t len, const uint8_t cr_crc)</argsstring>
+        <name>header_checksum</name>
+        <param>
+          <type>const uint16_t</type>
+          <declname>len</declname>
+        </param>
+        <param>
+          <type>const uint8_t</type>
+          <declname>cr_crc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="96" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="96" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegr_1_1lora_1ad90ccd07d5e93e93e154e1123a17466b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::linear_regression</definition>
+        <argsstring>(float *h, int start_idx, int end_idx, float *k, float *b)</argsstring>
+        <name>linear_regression</name>
+        <param>
+          <type>float *</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>end_idx</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/utilities.h" line="122" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/utilities.h" bodystart="122" bodyend="159"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-lora/include/lora/decode.h" line="32" column="1"/>
+  </compounddef>
+</doxygen>

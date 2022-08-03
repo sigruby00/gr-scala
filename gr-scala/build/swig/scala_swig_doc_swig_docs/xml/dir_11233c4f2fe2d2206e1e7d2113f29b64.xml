@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_11233c4f2fe2d2206e1e7d2113f29b64" kind="dir">
+    <compoundname>scala</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="detector_8h">detector.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-scala/include/scala/"/>
+  </compounddef>
+</doxygen>

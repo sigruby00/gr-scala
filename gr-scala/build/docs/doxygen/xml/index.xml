@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1scala_1_1detector" kind="class"><name>gr::scala::detector</name>
+    <member refid="classgr_1_1scala_1_1detector_1ad22aba5dbf5c9d6c2a8b951d4d5da75a" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1scala_1_1detector_1aef3a6ce87819f0d82d55fbe5dac06857" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1scala_1_1detector__impl" kind="class"><name>gr::scala::detector_impl</name>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a43a059951da43e32aa836bd669660397" kind="variable"><name>d_sf</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1ac5fc8f127f27258d5061f3af5fab2af8" kind="variable"><name>d_bw</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a565e0e11ada4b74e1dbb77feb7d82d37" kind="variable"><name>d_fs</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a5b23897e8166a9739616c2c00c8257f8" kind="variable"><name>d_samples_per_second</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a389fd3edf6df75b874ef9b214c7c1920" kind="variable"><name>d_downchirp_ifreq</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a0ed6f05195362c0fc3fba0fe56eb3dfc" kind="variable"><name>d_upchirp_ifreq</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a3fcd7c77213a5fc6e1df153fe153f9ba" kind="variable"><name>d_upchirp_ifreq_v</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1aa08ecea33bc0e9e86c630a88ef5c53d2" kind="variable"><name>d_window</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1af0a6d11bd243c8da1c6a4293023adf25" kind="variable"><name>d_upchirp</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a791a4c1fcc123a0a20286510f90a5617" kind="variable"><name>d_downchirp</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a4ddd81bd50a2dff0556a56619954e96c" kind="variable"><name>d_downchirp_ext</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a5fed4c835250e9ffb83c47e94635baec" kind="variable"><name>d_upchirp_ext</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a0c81d5e6d37eeb5df80000c71df8c42b" kind="variable"><name>track</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a909bae886049516941a65d597117566c" kind="variable"><name>d_fft</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1abac5f45ae7a18e591d2364b483f686bd" kind="variable"><name>buffer</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a287e8011a0f8ce01da0b26e109ff7592" kind="variable"><name>buffer_fft</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a6aee44e506d61aaac6161a5853a71c69" kind="variable"><name>buffer_to_send</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1aacb1121fc016fb11e0de9b3056e33efb" kind="variable"><name>mag_dump</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a02369acd896051fc404b45c99f4560aa" kind="variable"><name>mosq</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a153122471c9b055b65965e0c5f917201" kind="variable"><name>rc</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1aa972fb5230bda6bc43df4f38f6b6b5d3" kind="variable"><name>t</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1aeb1f97bf1e01f322fb5c146a6d59e083" kind="variable"><name>d_samples_per_symbol</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a9ea339e471c59a38f7a98be0e4ad1f42" kind="variable"><name>d_num_sym_pre</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a9d3a3fb66f2f27ad98b7cfbe682bd9b5" kind="variable"><name>d_num_samples</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a73e0efceffa79c4f52aa534ee0356350" kind="variable"><name>d_bin_size</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1af64f464195879c8350234d92c7d03b0b" kind="variable"><name>d_fft_size</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a0692abf2d2c52b24a0c7ea86c5631bbe" kind="variable"><name>g_counter</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a41e126efcc9c28656bd3a68249951100" kind="variable"><name>d_num_preamble</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1aa569dcbcf9a99d816b1d964b4050f920" kind="variable"><name>d_bin_tolerance</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1afa1e427d3c7a1201d50cc8afebc9655e" kind="variable"><name>d_offset</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a4fa84e5b3d51a20c8953ca865ee461ef" kind="variable"><name>d_p</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a43ec6268110138c4a243ac7d02a286a3" kind="variable"><name>d_symbols_per_second</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a33c1b5fe4f3183cf8ffd961154a9d3c9" kind="variable"><name>d_dt</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a4e2732961208dde5d7210709547f6952" kind="variable"><name>d_beta</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1ac9bdd44397d4c7544d3d69760ff8abe9" kind="variable"><name>g_index</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1afa3cb47f882de952523cd37d58769d49" kind="function"><name>find_and_add_peak</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a263350e3b691b6a87f2988f6077c30ed" kind="function"><name>check_peak</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1ab5dc83a34b9b3153384640bb2c5abf24" kind="function"><name>calc_offset</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1ad222e4d8ac0749ffebbd94fac6ea118e" kind="function"><name>build_ideal_chirps</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a7839bf6cdb03c176be3126c8aa92ddf6" kind="function"><name>samples_to_file</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a7f96705abb7e348b5324733c22efaf5b" kind="function"><name>samples_to_file_cont</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a417ab34fd300684ee03311b265de3831" kind="function"><name>samples_to_file_cont_float</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a2388ce6fb215d7548fe72b8c9c5b2491" kind="function"><name>instantaneous_frequency</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a56d927f4409ca70e1affcbf282b29386" kind="function"><name>message_callback</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a7e455382d237567c82124bcf84953e6c" kind="function"><name>detector_impl</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a71e40a1a5c4b380b3eaa0fc944ad2039" kind="function"><name>~detector_impl</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a6abc0179df8c7ae79723c9b9ba8dfdc0" kind="function"><name>argmax_32f</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a99645b157745c6fd1e84e72fbcccc5a7" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1scala_1_1detector__impl_1a8f404dc79636eb6f8bfdfca9d588bc25" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="structgr_1_1scala_1_1peak" kind="struct"><name>gr::scala::peak</name>
+    <member refid="structgr_1_1scala_1_1peak_1a6eb913dfb6d65439b31a4fdba2973431" kind="variable"><name>bin</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1a55478eb5a4564672b8be90a148fa1586" kind="variable"><name>coarse_to</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1ac2a9baf743679d9083875bfdd92f02ab" kind="variable"><name>fine_to</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1afc345b562eacfc73988877ce73c7c631" kind="variable"><name>cfo</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1ae92c4f74485f4b0f8923b26a8f2ae4bd" kind="variable"><name>mag</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1a3be633a3b392e3bb188b27df723f6eb6" kind="variable"><name>w_idx</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1a13c1455efe46df3516ef3c9cf5732cc8" kind="variable"><name>mag_pos</name></member>
+    <member refid="structgr_1_1scala_1_1peak_1a96f5d08c999518410e7d79d0189a81ce" kind="function"><name>peak</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1lora" kind="namespace"><name>gr::lora</name>
+    <member refid="namespacegr_1_1lora_1a6f5dfbef15d56d598395120f44cb2867" kind="function"><name>pmod</name></member>
+  </compound>
+  <compound refid="namespacegr_1_1scala" kind="namespace"><name>gr::scala</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a9cb70bd975fca446db6aeab3a7a6a82f" kind="define"><name>SCALA_API</name></member>
+  </compound>
+  <compound refid="detector_8h" kind="file"><name>detector.h</name>
+  </compound>
+  <compound refid="detector__impl_8h" kind="file"><name>detector_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="utilities_8h" kind="file"><name>utilities.h</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_11233c4f2fe2d2206e1e7d2113f29b64" kind="dir"><name>scala</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

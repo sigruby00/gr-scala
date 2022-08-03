@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1pyramid__demod" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::pyramid_demod</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <includes refid="pyramid__demod_8h" local="no">pyramid_demod.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1lora_1_1pyramid__demod_1af7f26f2f6edcb016c6ee60d5d61020fc" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1lora_1_1pyramid__demod" kindref="compound">pyramid_demod</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;pyramid_demod&gt; gr::lora::pyramid_demod::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/include/lora/pyramid_demod.h" line="48" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/include/lora/pyramid_demod.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod_1a64cb232ebeeaaf012dd1065ab07b31d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1lora_1_1pyramid__demod_1af7f26f2f6edcb016c6ee60d5d61020fc" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::lora::pyramid_demod::make</definition>
+        <argsstring>(int g_id, unsigned short spreading_factor, bool low_data_rate, float beta, unsigned short fft_factor, float threshold, float fs_bw_ratio)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>g_id</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>fft_factor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fs_bw_ratio</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1lora_1_1pyramid__demod" kindref="compound">lora::pyramid_demod</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1lora_1_1pyramid__demod" kindref="compound">lora::pyramid_demod</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1lora_1_1pyramid__demod_1a64cb232ebeeaaf012dd1065ab07b31d4" kindref="member">lora::pyramid_demod::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/include/lora/pyramid_demod.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>block</label>
+      </node>
+      <node id="16">
+        <label>gr::lora::pyramid_demod</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>block</label>
+      </node>
+      <node id="18">
+        <label>gr::lora::pyramid_demod</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rubysig00/Documents/gr-lora/include/lora/pyramid_demod.h" line="46" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/include/lora/pyramid_demod.h" bodystart="45" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1pyramid__demod_1a64cb232ebeeaaf012dd1065ab07b31d4" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod_1af7f26f2f6edcb016c6ee60d5d61020fc" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

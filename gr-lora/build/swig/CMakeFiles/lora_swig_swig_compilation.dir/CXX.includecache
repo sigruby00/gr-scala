@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rubysig00/Documents/gr-lora/swig/lora_swig.i
+gnuradio.i
+/home/rubysig00/Documents/gr-lora/swig/gnuradio.i
+lora_swig_doc.i
+/home/rubysig00/Documents/gr-lora/swig/lora_swig_doc.i
+lora/demod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/demod.h
+lora/mod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/mod.h
+lora/pyramid_demod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/pyramid_demod.h
+lora/decode.h
+/home/rubysig00/Documents/gr-lora/swig/lora/decode.h
+lora/encode.h
+/home/rubysig00/Documents/gr-lora/swig/lora/encode.h
+lora/demod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/demod.h
+lora/mod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/mod.h
+lora/pyramid_demod.h
+/home/rubysig00/Documents/gr-lora/swig/lora/pyramid_demod.h
+lora/decode.h
+/home/rubysig00/Documents/gr-lora/swig/lora/decode.h
+lora/encode.h
+/home/rubysig00/Documents/gr-lora/swig/lora/encode.h
+

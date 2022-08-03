@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="pyramid__demod__impl_8h" kind="file" language="C++">
+    <compoundname>pyramid_demod_impl.h</compoundname>
+    <includes local="no">cmath</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">complex</includes>
+    <includes local="no">fstream</includes>
+    <includes local="no">limits</includes>
+    <includes local="no">gnuradio/fft/fft.h</includes>
+    <includes local="no">gnuradio/fft/window.h</includes>
+    <includes local="no">volk/volk.h</includes>
+    <includes refid="pyramid__demod_8h" local="no">lora/pyramid_demod.h</includes>
+    <includes refid="utilities_8h" local="yes">utilities.h</includes>
+    <includes local="no">mosquitto.h</includes>
+    <includes local="no">arpa/inet.h</includes>
+    <incdepgraph>
+      <node id="127">
+        <label>arpa/inet.h</label>
+      </node>
+      <node id="114">
+        <label>queue</label>
+      </node>
+      <node id="117">
+        <label>limits</label>
+      </node>
+      <node id="120">
+        <label>volk/volk.h</label>
+      </node>
+      <node id="109">
+        <label>pyramid_demod_impl.h</label>
+        <link refid="pyramid__demod__impl_8h"/>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>lora/pyramid_demod.h</label>
+        <link refid="pyramid__demod_8h"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>cmath</label>
+      </node>
+      <node id="123">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="116">
+        <label>fstream</label>
+      </node>
+      <node id="119">
+        <label>gnuradio/fft/window.h</label>
+      </node>
+      <node id="125">
+        <label>utilities.h</label>
+        <link refid="utilities_8h"/>
+      </node>
+      <node id="118">
+        <label>gnuradio/fft/fft.h</label>
+      </node>
+      <node id="112">
+        <label>vector</label>
+      </node>
+      <node id="124">
+        <label>gnuradio/block.h</label>
+      </node>
+      <node id="126">
+        <label>mosquitto.h</label>
+      </node>
+      <node id="111">
+        <label>cstdlib</label>
+      </node>
+      <node id="113">
+        <label>deque</label>
+      </node>
+      <node id="122">
+        <label>lora/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>complex</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structgr_1_1lora_1_1peak" prot="public">gr::lora::peak</innerclass>
+    <innerclass refid="structgr_1_1lora_1_1bin__track__id" prot="public">gr::lora::bin_track_id</innerclass>
+    <innerclass refid="structgr_1_1lora_1_1packet__state" prot="public">gr::lora::packet_state</innerclass>
+    <innerclass refid="classgr_1_1lora_1_1pyramid__demod__impl" prot="public">gr::lora::pyramid_demod_impl</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1lora">gr::lora</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1scala" kind="namespace" language="C++">
+    <compoundname>gr::scala</compoundname>
+    <innerclass refid="classgr_1_1scala_1_1detector" prot="public">gr::scala::detector</innerclass>
+    <innerclass refid="classgr_1_1scala_1_1detector__impl" prot="public">gr::scala::detector_impl</innerclass>
+    <innerclass refid="structgr_1_1scala_1_1peak" prot="public">gr::scala::peak</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/rubysig00/Documents/gr-scala/include/scala/detector.h" line="28" column="1"/>
+  </compounddef>
+</doxygen>

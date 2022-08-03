@@ -1,0 +1,976 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1demod__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::demod_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1demod" prot="public" virt="non-virtual">gr::lora::demod</basecompoundref>
+    <includes refid="demod__impl_8h" local="no">demod_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ad3ad8869a548126fe12f86584c188c94" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::demod_impl::d_header_port</definition>
+        <argsstring></argsstring>
+        <name>d_header_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="49" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1afdbddfb86c8f7a751fefa6593df7b047" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::demod_impl::d_out_port</definition>
+        <argsstring></argsstring>
+        <name>d_out_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="50" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a218f5b97c1dc405f207a7afa25545405" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1lora_1a12a2afbdd4291ae8a661a80558cee91e" kindref="member">demod_state_t</ref></type>
+        <definition>demod_state_t gr::lora::demod_impl::d_state</definition>
+        <argsstring></argsstring>
+        <name>d_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="52" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa0696bd9e4c62acd8e296da44f39ce2c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::demod_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="53" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a6ba3e108b8996078f8c85bce963295b9" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::demod_impl::d_cr</definition>
+        <argsstring></argsstring>
+        <name>d_cr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="54" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aaecc6e8b7ba2af9ca8fbc5caf2ac1ac3" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gr::lora::demod_impl::d_payload_len</definition>
+        <argsstring></argsstring>
+        <name>d_payload_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="55" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a80505529cfb5b3ca0f33bcfeb65722a4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_crc</definition>
+        <argsstring></argsstring>
+        <name>d_crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="56" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1afaf26e92217208ae21a3bbe2a51d3b19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="57" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a939ab76d567fd102dd5216854a92c544" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_header</definition>
+        <argsstring></argsstring>
+        <name>d_header</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="58" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a8b647fca03f333e153f371783716b8d5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_header_received</definition>
+        <argsstring></argsstring>
+        <name>d_header_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="59" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aad8a5e7c1cd9253a693363f44e22cbba" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::demod_impl::d_header_valid</definition>
+        <argsstring></argsstring>
+        <name>d_header_valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="60" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a79da350962d9b05c582c714bb6c91c4a" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_num_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="62" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a7f49638489fc43029b22d4790aad8c6b" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_fft_size_factor</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="63" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a86d89e407da426090e8f1826d374ecc8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="64" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aaa8e93062cd0ef4bdc6ede0641396fed" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_overlaps</definition>
+        <argsstring></argsstring>
+        <name>d_overlaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="65" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ac0063894145b7afada5342fc66db3cb6" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="66" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a9645e0df7d6842bb78b9e0edb39b5fb7" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_p</definition>
+        <argsstring></argsstring>
+        <name>d_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="67" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a431f0d522baa28c2a5ca01b4b53d37bb" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::d_num_samples</definition>
+        <argsstring></argsstring>
+        <name>d_num_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="68" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a62f991e68d7d8ff7db45d55485a4cace" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::d_bin_len</definition>
+        <argsstring></argsstring>
+        <name>d_bin_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="69" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ad932a1dae9c3fb44309cb35b00a465c3" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::d_preamble_drift_max</definition>
+        <argsstring></argsstring>
+        <name>d_preamble_drift_max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="70" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a38c1724e359d871ef50a23d3eb2ff9f2" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t gr::lora::demod_impl::d_packet_symbol_len</definition>
+        <argsstring></argsstring>
+        <name>d_packet_symbol_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="72" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a17ad1bea60ce5431bdffb73535f26952" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::d_cfo</definition>
+        <argsstring></argsstring>
+        <name>d_cfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="74" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a21996b43d54df5d82720d2d8851e38c8" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::d_preamble_idx</definition>
+        <argsstring></argsstring>
+        <name>d_preamble_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="76" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa29e005da9858ce46e748e57bd33022a" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_sfd_idx</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="77" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a8e878b631714b2aa46b8f47a3d81bda8" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; gr::lora::demod_impl::d_argmax_history</definition>
+        <argsstring></argsstring>
+        <name>d_argmax_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="78" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1af2571576f2130696e4795a1f6f090a6a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::demod_impl::d_sfd_history</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="79" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ac26f5e827ee706cc89854f8b3bea7ac3" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::demod_impl::snr_history</definition>
+        <argsstring></argsstring>
+        <name>snr_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="80" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a08b8713064ac8dbdacfbb6a29187b77c" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::d_sync_recovery_counter</definition>
+        <argsstring></argsstring>
+        <name>d_sync_recovery_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="81" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a2a91bfcec75021efeb43d13f6928d0a4" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::lora::demod_impl::d_peak_search_algorithm</definition>
+        <argsstring></argsstring>
+        <name>d_peak_search_algorithm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="83" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a12ed08adb11cab849400b0efd91a0ec6" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gr::lora::demod_impl::d_peak_search_phase_k</definition>
+        <argsstring></argsstring>
+        <name>d_peak_search_phase_k</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="84" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aac829b5b65b54780a33df5a5a279996f" prot="private" static="no" mutable="no">
+        <type>fft::fft_complex *</type>
+        <definition>fft::fft_complex* gr::lora::demod_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="86" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a0d2f5e289909416fa200d7b9e0b71aa2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::demod_impl::d_window</definition>
+        <argsstring></argsstring>
+        <name>d_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="87" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a61b9a694abc2983ce081b7887b0a2742" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::d_beta</definition>
+        <argsstring></argsstring>
+        <name>d_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="88" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a7c852b63ece103e69a000351fd679186" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::demod_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="90" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a472417c4fc723a4a86bb918e41181f7c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::demod_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="91" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a101f73e02d480f0406c957e56ec2e884" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::demod_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="93" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aee70041d51506846f9bfa52c0d4cfbc8" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_raw</definition>
+        <argsstring></argsstring>
+        <name>f_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a1c4a686ed59a62e3764300075649c9e3" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_up_windowless</definition>
+        <argsstring></argsstring>
+        <name>f_up_windowless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa8f82e228a74fe368129be2d6fe15ac2" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_up</definition>
+        <argsstring></argsstring>
+        <name>f_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1ad187269f82a28e3ff2c4253b705ad382" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_down</definition>
+        <argsstring></argsstring>
+        <name>f_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a1603fa018c01e0917c9161728bb0fd92" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::demod_impl::f_fft</definition>
+        <argsstring></argsstring>
+        <name>f_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a1221fca72d1ecc95a465fab42a25134c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::demod_impl::gt_idx</definition>
+        <argsstring></argsstring>
+        <name>gt_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="98" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aa49fda67dae88a3e583de27ac20266ac" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::demod_impl::rc</definition>
+        <argsstring></argsstring>
+        <name>rc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="99" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1aca56d2eae290e4f65c9f4893fd84a3de" prot="private" static="no" mutable="no">
+        <type>struct mosquitto *</type>
+        <definition>struct mosquitto* gr::lora::demod_impl::mosq</definition>
+        <argsstring></argsstring>
+        <name>mosq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="100" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1a621178a5434ef38d40387759a08b259f" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::lora::demod_impl::buffer_to_send</definition>
+        <argsstring></argsstring>
+        <name>buffer_to_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="101" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1demod__impl_1accd3c8f252d9a2b5403a9071f762fb0b" prot="private" static="no" mutable="no">
+        <type>time_t</type>
+        <definition>time_t gr::lora::demod_impl::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="102" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a95b60c5840648c347d78d2cd9c2981b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::demod_impl::demod_impl</definition>
+        <argsstring>(int g_id, uint8_t spreading_factor, bool header, uint8_t payload_len, uint8_t cr, bool crc, bool low_data_rate, float beta, uint16_t fft_factor, uint8_t peak_search_algorithm, uint16_t peak_search_phase_k, float fs_bw_ratio)</argsstring>
+        <name>demod_impl</name>
+        <param>
+          <type>int</type>
+          <declname>g_id</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>header</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>payload_len</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>crc</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>fft_factor</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>peak_search_algorithm</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>peak_search_phase_k</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fs_bw_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1aa8ffc7b156ff9335094581031ed9d7c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::demod_impl::~demod_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~demod_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1af58194063556c079d72633b8cd65f156" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::demod_impl::argmax</definition>
+        <argsstring>(gr_complex *fft_result)</argsstring>
+        <name>argmax</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>fft_result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a69d9a60352183d6d9942edd3fc26c6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::argmax_32f</definition>
+        <argsstring>(float *fft_result, float *max_val_p)</argsstring>
+        <name>argmax_32f</name>
+        <param>
+          <type>float *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_val_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1aed1ebbb85424413186406706f639dead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::search_fft_peak</definition>
+        <argsstring>(const lv_32fc_t *fft_result, float *buffer1, float *buffer2, gr_complex *buffer_c, float *max_val_p)</argsstring>
+        <name>search_fft_peak</name>
+        <param>
+          <type>const lv_32fc_t *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>buffer1</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>buffer2</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>buffer_c</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_val_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a05bfcdd532002c720279ae96430167db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::demod_impl::fft_add</definition>
+        <argsstring>(const lv_32fc_t *fft_result, float *buffer, gr_complex *buffer_c, float *max_val_p, float phase_offset)</argsstring>
+        <name>fft_add</name>
+        <param>
+          <type>const lv_32fc_t *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>buffer_c</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_val_p</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>phase_offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a7f9027ddb7055a0707dc6aeb7e71d674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::demod_impl::dynamic_compensation</definition>
+        <argsstring>(std::vector&lt; uint16_t &gt; &amp;compensated_symbols)</argsstring>
+        <name>dynamic_compensation</name>
+        <param>
+          <type>std::vector&lt; uint16_t &gt; &amp;</type>
+          <declname>compensated_symbols</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a9f8940459b7f40df776251a6eca10270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::demod_impl::determine_snr</definition>
+        <argsstring>(gr_complex *fft_result, int m_idx)</argsstring>
+        <name>determine_snr</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m_idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1a35f85d51371e792184057639319d7f65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::demod_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1demod__impl_1acf1fcfe947d24485506827060d38ca48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::demod_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="134" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>gr::lora::demod</label>
+        <link refid="classgr_1_1lora_1_1demod"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>block</label>
+      </node>
+      <node id="18">
+        <label>gr::lora::demod_impl</label>
+        <link refid="classgr_1_1lora_1_1demod__impl"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="22">
+        <label>gr::lora::demod</label>
+        <link refid="classgr_1_1lora_1_1demod"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>block</label>
+      </node>
+      <node id="21">
+        <label>gr::lora::demod_impl</label>
+        <link refid="classgr_1_1lora_1_1demod__impl"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" line="45" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/demod_impl.h" bodystart="44" bodyend="138"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1demod__impl_1af58194063556c079d72633b8cd65f156" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>argmax</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a69d9a60352183d6d9942edd3fc26c6f8" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>argmax_32f</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a621178a5434ef38d40387759a08b259f" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>buffer_to_send</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a8e878b631714b2aa46b8f47a3d81bda8" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_argmax_history</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a61b9a694abc2983ce081b7887b0a2742" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a62f991e68d7d8ff7db45d55485a4cace" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_bin_len</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a17ad1bea60ce5431bdffb73535f26952" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a6ba3e108b8996078f8c85bce963295b9" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_cr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a80505529cfb5b3ca0f33bcfeb65722a4" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_crc</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a472417c4fc723a4a86bb918e41181f7c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aac829b5b65b54780a33df5a5a279996f" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a86d89e407da426090e8f1826d374ecc8" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a7f49638489fc43029b22d4790aad8c6b" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_fft_size_factor</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a939ab76d567fd102dd5216854a92c544" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_header</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ad3ad8869a548126fe12f86584c188c94" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_header_port</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a8b647fca03f333e153f371783716b8d5" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_header_received</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aad8a5e7c1cd9253a693363f44e22cbba" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_header_valid</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1afaf26e92217208ae21a3bbe2a51d3b19" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a431f0d522baa28c2a5ca01b4b53d37bb" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_num_samples</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a79da350962d9b05c582c714bb6c91c4a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_num_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ac0063894145b7afada5342fc66db3cb6" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1afdbddfb86c8f7a751fefa6593df7b047" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_out_port</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aaa8e93062cd0ef4bdc6ede0641396fed" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_overlaps</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a9645e0df7d6842bb78b9e0edb39b5fb7" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_p</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a38c1724e359d871ef50a23d3eb2ff9f2" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_packet_symbol_len</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aaecc6e8b7ba2af9ca8fbc5caf2ac1ac3" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_payload_len</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a2a91bfcec75021efeb43d13f6928d0a4" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_peak_search_algorithm</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a12ed08adb11cab849400b0efd91a0ec6" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_peak_search_phase_k</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ad932a1dae9c3fb44309cb35b00a465c3" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_preamble_drift_max</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a21996b43d54df5d82720d2d8851e38c8" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_preamble_idx</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa0696bd9e4c62acd8e296da44f39ce2c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1af2571576f2130696e4795a1f6f090a6a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sfd_history</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa29e005da9858ce46e748e57bd33022a" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sfd_idx</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a218f5b97c1dc405f207a7afa25545405" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_state</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a101f73e02d480f0406c957e56ec2e884" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a08b8713064ac8dbdacfbb6a29187b77c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_sync_recovery_counter</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a7c852b63ece103e69a000351fd679186" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a0d2f5e289909416fa200d7b9e0b71aa2" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>d_window</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a95b60c5840648c347d78d2cd9c2981b9" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>demod_impl</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a9f8940459b7f40df776251a6eca10270" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>determine_snr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a7f9027ddb7055a0707dc6aeb7e71d674" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>dynamic_compensation</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ad187269f82a28e3ff2c4253b705ad382" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_down</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a1603fa018c01e0917c9161728bb0fd92" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_fft</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aee70041d51506846f9bfa52c0d4cfbc8" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_raw</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa8f82e228a74fe368129be2d6fe15ac2" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_up</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a1c4a686ed59a62e3764300075649c9e3" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>f_up_windowless</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a05bfcdd532002c720279ae96430167db" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>fft_add</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a35f85d51371e792184057639319d7f65" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1acf1fcfe947d24485506827060d38ca48" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1a1221fca72d1ecc95a465fab42a25134c" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>gt_idx</name></member>
+      <member refid="classgr_1_1lora_1_1demod_1a67d977fbdebefbed8249481b0d61f78c" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aca56d2eae290e4f65c9f4893fd84a3de" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>mosq</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa49fda67dae88a3e583de27ac20266ac" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>rc</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aed1ebbb85424413186406706f639dead" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>search_fft_peak</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1ac26f5e827ee706cc89854f8b3bea7ac3" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>snr_history</name></member>
+      <member refid="classgr_1_1lora_1_1demod_1aaf5f7e94353c27096fb0c41057382bef" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1accd3c8f252d9a2b5403a9071f762fb0b" prot="private" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>t</name></member>
+      <member refid="classgr_1_1lora_1_1demod__impl_1aa8ffc7b156ff9335094581031ed9d7c4" prot="public" virt="non-virtual"><scope>gr::lora::demod_impl</scope><name>~demod_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

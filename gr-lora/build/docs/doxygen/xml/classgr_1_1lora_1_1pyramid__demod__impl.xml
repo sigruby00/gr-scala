@@ -1,0 +1,968 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1lora_1_1pyramid__demod__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::lora::pyramid_demod_impl</compoundname>
+    <basecompoundref refid="classgr_1_1lora_1_1pyramid__demod" prot="public" virt="non-virtual">gr::lora::pyramid_demod</basecompoundref>
+    <includes refid="pyramid__demod__impl_8h" local="no">pyramid_demod_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a24e3027c0dcb2d4b6bbc03a7f30c0f55" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::lora::pyramid_demod_impl::gt_idx</definition>
+        <argsstring></argsstring>
+        <name>gt_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="84" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a5ed6aa9af1994b18cc69d03b41e5a42b" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::pyramid_demod_impl::d_header_port</definition>
+        <argsstring></argsstring>
+        <name>d_header_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="86" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a59e4bcf9d4cf8172caee6a8528229c76" prot="private" static="no" mutable="no">
+        <type>pmt::pmt_t</type>
+        <definition>pmt::pmt_t gr::lora::pyramid_demod_impl::d_out_port</definition>
+        <argsstring></argsstring>
+        <name>d_out_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="87" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ac9cb609e062741b1fa934e9414f79bd2" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_sf</definition>
+        <argsstring></argsstring>
+        <name>d_sf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="89" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a96c53c6798e750069dcf54dcb189e231" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::pyramid_demod_impl::d_ldr</definition>
+        <argsstring></argsstring>
+        <name>d_ldr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="90" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a98315dab194f7d140b6afaa791d3508b" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_num_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_num_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="92" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a30dde09e5a36f633b68d5d45c61f4c0c" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_fft_size_factor</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size_factor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="93" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a957b10496018756d9671edcf8381fcb9" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_fft_size</definition>
+        <argsstring></argsstring>
+        <name>d_fft_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="94" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a1dbc68ff3a33461a505c8da07625a854" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_overlaps</definition>
+        <argsstring></argsstring>
+        <name>d_overlaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="95" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a8114212dab739bfed76dd41d3fcbe02e" prot="private" static="no" mutable="no">
+        <type>short</type>
+        <definition>short gr::lora::pyramid_demod_impl::d_ttl</definition>
+        <argsstring></argsstring>
+        <name>d_ttl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="96" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1aea6c99d92b6a325aa0f6a40ce943bc80" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_bin_tolerance</definition>
+        <argsstring></argsstring>
+        <name>d_bin_tolerance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="97" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1aa3380f3aac3dff1c221d4fa231ee008f" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_offset</definition>
+        <argsstring></argsstring>
+        <name>d_offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="98" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1afb06fffe5d4d73b9924e55787a4077c2" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_p</definition>
+        <argsstring></argsstring>
+        <name>d_p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="99" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a3c4e9736fddc8d4e83cc6f2f19193cb6" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_num_samples</definition>
+        <argsstring></argsstring>
+        <name>d_num_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="100" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a36fa6198b66ab469ccabeebd3b894cce" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_bin_size</definition>
+        <argsstring></argsstring>
+        <name>d_bin_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="101" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a9898783c4482b7a8aac62bde6c1050a0" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_num_preamble</definition>
+        <argsstring></argsstring>
+        <name>d_num_preamble</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="102" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a65319e99b8aeeab5422e87ad023cdfaa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::pyramid_demod_impl::d_cfo</definition>
+        <argsstring></argsstring>
+        <name>d_cfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="104" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a4cbbfe3d4ad44b0c8b8d2cc4aa773d34" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::pyramid_demod_impl::d_power</definition>
+        <argsstring></argsstring>
+        <name>d_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="105" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ab32bd13720069ac7a8f79effee5b2f2f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::pyramid_demod_impl::d_threshold</definition>
+        <argsstring></argsstring>
+        <name>d_threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="106" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a1412316db5519e3db50089ead6891870" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::lora::pyramid_demod_impl::d_squelched</definition>
+        <argsstring></argsstring>
+        <name>d_squelched</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="107" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a0f27e14dcb5c3119598a472b0afe695e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_preamble_idx</definition>
+        <argsstring></argsstring>
+        <name>d_preamble_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="109" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ac70fc959404234938493c45f21db88d8" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_sfd_idx</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="110" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ae43ff9dd4d124aec206b929225285f01" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; gr::lora::pyramid_demod_impl::d_argmax_history</definition>
+        <argsstring></argsstring>
+        <name>d_argmax_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="111" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a0c7f76a18b55fa9c80a80a7c13f138ea" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::pyramid_demod_impl::d_sfd_history</definition>
+        <argsstring></argsstring>
+        <name>d_sfd_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="112" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ac0e5626e61c9eabee12f3f631546aac9" prot="private" static="no" mutable="no">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::d_sync_recovery_counter</definition>
+        <argsstring></argsstring>
+        <name>d_sync_recovery_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="113" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a45e20e3c44b5855a424c787efefcb93a" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_bin_ref</definition>
+        <argsstring></argsstring>
+        <name>d_bin_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="115" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a3299ebccafa6fe1534e977d1fe58af31" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::d_ts_ref</definition>
+        <argsstring></argsstring>
+        <name>d_ts_ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="116" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1af8378a5c48291ab117b233efe71cf036" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;peak&gt; &gt; gr::lora::pyramid_demod_impl::d_track</definition>
+        <argsstring></argsstring>
+        <name>d_track</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="117" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a298f8c65436948d6416a75d69c891a78" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgr_1_1lora_1_1bin__track__id" kindref="compound">bin_track_id</ref> &gt;</type>
+        <definition>std::vector&lt;bin_track_id&gt; gr::lora::pyramid_demod_impl::d_bin_track_id_list</definition>
+        <argsstring></argsstring>
+        <name>d_bin_track_id_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="118" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a51390890ce0d0409aab7ead150edea59" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; unsigned short &gt;</type>
+        <definition>std::deque&lt;unsigned short&gt; gr::lora::pyramid_demod_impl::d_track_id_pool</definition>
+        <argsstring></argsstring>
+        <name>d_track_id_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="119" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1aa6d200f766957f8899a42fcaaf7cf854" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; <ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;peak&gt; &gt; gr::lora::pyramid_demod_impl::d_packet</definition>
+        <argsstring></argsstring>
+        <name>d_packet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="120" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a71922ecc6368b28044ba8516618bc557" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structgr_1_1lora_1_1packet__state" kindref="compound">packet_state</ref> &gt;</type>
+        <definition>std::vector&lt;packet_state&gt; gr::lora::pyramid_demod_impl::d_packet_state_list</definition>
+        <argsstring></argsstring>
+        <name>d_packet_state_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="121" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ae390059e46a9e8ff23d72539ab6951a0" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; unsigned short &gt;</type>
+        <definition>std::deque&lt;unsigned short&gt; gr::lora::pyramid_demod_impl::d_packet_id_pool</definition>
+        <argsstring></argsstring>
+        <name>d_packet_id_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="122" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a2ef1092471e5e2148f5bf15bf1e89dd0" prot="private" static="no" mutable="no">
+        <type>fft::fft_complex *</type>
+        <definition>fft::fft_complex* gr::lora::pyramid_demod_impl::d_fft</definition>
+        <argsstring></argsstring>
+        <name>d_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="124" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a049c31c25dd774d4ea783321c4b7dfea" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::lora::pyramid_demod_impl::d_window</definition>
+        <argsstring></argsstring>
+        <name>d_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="125" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1afc561e7d9e0561863e93e9af05a92be3" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float gr::lora::pyramid_demod_impl::d_beta</definition>
+        <argsstring></argsstring>
+        <name>d_beta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="126" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a1eb6face40dfbb4892b717c16f36d718" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::pyramid_demod_impl::d_upchirp</definition>
+        <argsstring></argsstring>
+        <name>d_upchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="128" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a83dee6ecff1426b1918ff738eaf33fff" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; gr_complex &gt;</type>
+        <definition>std::vector&lt;gr_complex&gt; gr::lora::pyramid_demod_impl::d_downchirp</definition>
+        <argsstring></argsstring>
+        <name>d_downchirp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="129" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a3ecad8efc73d57d18ff5b1779e12f61a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned short &gt;</type>
+        <definition>std::vector&lt;unsigned short&gt; gr::lora::pyramid_demod_impl::d_symbols</definition>
+        <argsstring></argsstring>
+        <name>d_symbols</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="131" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a93dcc74af578cd9ff0894837015d04b2" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::pyramid_demod_impl::f_raw</definition>
+        <argsstring></argsstring>
+        <name>f_raw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="133" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1aba9027c32864e872611cb63e9e24e44e" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::pyramid_demod_impl::f_up_windowless</definition>
+        <argsstring></argsstring>
+        <name>f_up_windowless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="133" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a5926ea1996b858259563f61a7a667b54" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::pyramid_demod_impl::f_up</definition>
+        <argsstring></argsstring>
+        <name>f_up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="133" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1ad95c7766496d75547c04b81234ab9dab" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::pyramid_demod_impl::f_down</definition>
+        <argsstring></argsstring>
+        <name>f_down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="133" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1lora_1_1pyramid__demod__impl_1a01a88efd3b8d0c4c97653a208349b3a0" prot="private" static="no" mutable="no">
+        <type>std::ofstream</type>
+        <definition>std::ofstream gr::lora::pyramid_demod_impl::f_fft</definition>
+        <argsstring></argsstring>
+        <name>f_fft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="133" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a43b7be7e5cd18881211361daacc23a00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::pyramid_demod_impl::pyramid_demod_impl</definition>
+        <argsstring>(int g_id, unsigned short spreading_factor, bool low_data_rate, float beta, unsigned short fft_factor, float threshold, float fs_bw_ratio)</argsstring>
+        <name>pyramid_demod_impl</name>
+        <param>
+          <type>int</type>
+          <declname>g_id</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>spreading_factor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>low_data_rate</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>fft_factor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fs_bw_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a1516d058e2502b710d99531261bdfa8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::lora::pyramid_demod_impl::~pyramid_demod_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~pyramid_demod_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a643807a1b56a9cbf71ed61ab4f781914" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short gr::lora::pyramid_demod_impl::argmax</definition>
+        <argsstring>(gr_complex *fft_result, bool update_squelch)</argsstring>
+        <name>argmax</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_squelch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a0f81ac38338c3172b9e1fb8febc445e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::lora::pyramid_demod_impl::argmax_32f</definition>
+        <argsstring>(float *fft_result, bool update_squelch, float *max_val_p)</argsstring>
+        <name>argmax_32f</name>
+        <param>
+          <type>float *</type>
+          <declname>fft_result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>update_squelch</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>max_val_p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1ad4b697151cb855291018a48cf52f87bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float gr::lora::pyramid_demod_impl::get_dis</definition>
+        <argsstring>(unsigned int ts1, float h1, unsigned int ts2, float h2)</argsstring>
+        <name>get_dis</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ts1</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>ts2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>h2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a5e3067f2b9e3be71972ecc1375de2c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::pyramid_demod_impl::find_and_add_peak</definition>
+        <argsstring>(float *fft_mag_add, float *fft_mag_add_w, float *fft_mag)</argsstring>
+        <name>find_and_add_peak</name>
+        <param>
+          <type>float *</type>
+          <declname>fft_mag_add</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>fft_mag_add_w</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>fft_mag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a367644b1070fd7a9f461e7d6041f2f62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::pyramid_demod_impl::get_apex</definition>
+        <argsstring>(std::vector&lt; peak &gt; &amp;track, peak &amp;pk, bool is_preamble=false)</argsstring>
+        <name>get_apex</name>
+        <param>
+          <type>std::vector&lt; <ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &gt; &amp;</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type><ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &amp;</type>
+          <declname>pk</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_preamble</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a6a4c5a593bcd3354f0b1cb60f5f4fd78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4eb" kindref="member">symbol_type</ref></type>
+        <definition>symbol_type gr::lora::pyramid_demod_impl::get_central_peak</definition>
+        <argsstring>(unsigned short track_id, peak &amp;pk)</argsstring>
+        <name>get_central_peak</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>track_id</declname>
+        </param>
+        <param>
+          <type><ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &amp;</type>
+          <declname>pk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1acfba10da4b833318546a2a76fce6a4a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::lora::pyramid_demod_impl::add_symbol_to_packet</definition>
+        <argsstring>(peak &amp;pk, symbol_type st)</argsstring>
+        <name>add_symbol_to_packet</name>
+        <param>
+          <type><ref refid="structgr_1_1lora_1_1peak" kindref="compound">peak</ref> &amp;</type>
+          <declname>pk</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacegr_1_1lora_1a23943faf7ca50ab1f7294630dca7f4eb" kindref="member">symbol_type</ref></type>
+          <declname>st</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a0e22e8a9e12722d04b5550d425cde0e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::pyramid_demod_impl::check_and_update_track</definition>
+        <argsstring>()</argsstring>
+        <name>check_and_update_track</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1afc42b0f8600b8209861e177056d2f65e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::lora::pyramid_demod_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1lora_1_1pyramid__demod__impl_1a2a5db2a4163fa47ed42ddfed33588ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::lora::pyramid_demod_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="160" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="57">
+        <label>block</label>
+      </node>
+      <node id="56">
+        <label>gr::lora::pyramid_demod</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gr::lora::pyramid_demod_impl</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod__impl"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="60">
+        <label>block</label>
+      </node>
+      <node id="59">
+        <label>gr::lora::pyramid_demod</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>gr::lora::pyramid_demod_impl</label>
+        <link refid="classgr_1_1lora_1_1pyramid__demod__impl"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" line="82" column="1" bodyfile="/home/rubysig00/Documents/gr-lora/lib/pyramid_demod_impl.h" bodystart="81" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1acfba10da4b833318546a2a76fce6a4a6" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>add_symbol_to_packet</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a643807a1b56a9cbf71ed61ab4f781914" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>argmax</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a0f81ac38338c3172b9e1fb8febc445e9" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>argmax_32f</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a0e22e8a9e12722d04b5550d425cde0e7" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>check_and_update_track</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ae43ff9dd4d124aec206b929225285f01" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_argmax_history</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1afc561e7d9e0561863e93e9af05a92be3" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_beta</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a45e20e3c44b5855a424c787efefcb93a" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_bin_ref</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a36fa6198b66ab469ccabeebd3b894cce" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_bin_size</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1aea6c99d92b6a325aa0f6a40ce943bc80" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_bin_tolerance</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a298f8c65436948d6416a75d69c891a78" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_bin_track_id_list</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a65319e99b8aeeab5422e87ad023cdfaa" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_cfo</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a83dee6ecff1426b1918ff738eaf33fff" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_downchirp</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a2ef1092471e5e2148f5bf15bf1e89dd0" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_fft</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a957b10496018756d9671edcf8381fcb9" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_fft_size</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a30dde09e5a36f633b68d5d45c61f4c0c" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_fft_size_factor</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a5ed6aa9af1994b18cc69d03b41e5a42b" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_header_port</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a96c53c6798e750069dcf54dcb189e231" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_ldr</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a9898783c4482b7a8aac62bde6c1050a0" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_num_preamble</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a3c4e9736fddc8d4e83cc6f2f19193cb6" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_num_samples</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a98315dab194f7d140b6afaa791d3508b" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_num_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1aa3380f3aac3dff1c221d4fa231ee008f" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_offset</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a59e4bcf9d4cf8172caee6a8528229c76" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_out_port</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a1dbc68ff3a33461a505c8da07625a854" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_overlaps</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1afb06fffe5d4d73b9924e55787a4077c2" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_p</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1aa6d200f766957f8899a42fcaaf7cf854" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_packet</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ae390059e46a9e8ff23d72539ab6951a0" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_packet_id_pool</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a71922ecc6368b28044ba8516618bc557" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_packet_state_list</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a4cbbfe3d4ad44b0c8b8d2cc4aa773d34" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_power</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a0f27e14dcb5c3119598a472b0afe695e" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_preamble_idx</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ac9cb609e062741b1fa934e9414f79bd2" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_sf</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a0c7f76a18b55fa9c80a80a7c13f138ea" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_sfd_history</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ac70fc959404234938493c45f21db88d8" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_sfd_idx</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a1412316db5519e3db50089ead6891870" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_squelched</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a3ecad8efc73d57d18ff5b1779e12f61a" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_symbols</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ac0e5626e61c9eabee12f3f631546aac9" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_sync_recovery_counter</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ab32bd13720069ac7a8f79effee5b2f2f" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_threshold</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1af8378a5c48291ab117b233efe71cf036" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_track</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a51390890ce0d0409aab7ead150edea59" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_track_id_pool</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a3299ebccafa6fe1534e977d1fe58af31" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_ts_ref</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a8114212dab739bfed76dd41d3fcbe02e" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_ttl</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a1eb6face40dfbb4892b717c16f36d718" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_upchirp</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a049c31c25dd774d4ea783321c4b7dfea" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>d_window</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ad95c7766496d75547c04b81234ab9dab" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>f_down</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a01a88efd3b8d0c4c97653a208349b3a0" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>f_fft</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a93dcc74af578cd9ff0894837015d04b2" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>f_raw</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a5926ea1996b858259563f61a7a667b54" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>f_up</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1aba9027c32864e872611cb63e9e24e44e" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>f_up_windowless</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a5e3067f2b9e3be71972ecc1375de2c62" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>find_and_add_peak</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1afc42b0f8600b8209861e177056d2f65e" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a2a5db2a4163fa47ed42ddfed33588ac2" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a367644b1070fd7a9f461e7d6041f2f62" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>get_apex</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a6a4c5a593bcd3354f0b1cb60f5f4fd78" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>get_central_peak</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1ad4b697151cb855291018a48cf52f87bb" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>get_dis</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a24e3027c0dcb2d4b6bbc03a7f30c0f55" prot="private" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>gt_idx</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod_1a64cb232ebeeaaf012dd1065ab07b31d4" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a43b7be7e5cd18881211361daacc23a00" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>pyramid_demod_impl</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod_1af7f26f2f6edcb016c6ee60d5d61020fc" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1lora_1_1pyramid__demod__impl_1a1516d058e2502b710d99531261bdfa8c" prot="public" virt="non-virtual"><scope>gr::lora::pyramid_demod_impl</scope><name>~pyramid_demod_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
